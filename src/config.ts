@@ -111,11 +111,7 @@ export async function resolveChangelogConfig(
     config.to = await getCurrentGitRef(cwd);
   }
 
-  if (config.output) {
-    config.output = resolve(cwd, config.output);
-  } else {
-    config.output = false;
-  }
+  config.output = config.output ? resolve(cwd, config.output) : false;
 
   if (!config.repo) {
     config.repo = await resolveRepoConfig(cwd, config.repoType);

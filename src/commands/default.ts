@@ -90,7 +90,7 @@ export default async function defaultMain(args: Argv) {
   }
 
   // Update changelog file when output is configured and not explicitly disabled
-  if (config.output !== false && !args['no-output']) {
+  if (config.output !== false && !args["no-output"]) {
     let changelogMD: string;
     if (existsSync(config.output)) {
       consola.info(`Updating ${config.output}`);
