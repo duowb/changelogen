@@ -1,4 +1,5 @@
-# changelogen
+> # fork of [changelogen](https://github.com/unjs/changelogen)
+> ## Because I need to use [283](https://github.com/unjs/changelogen/pull/283)
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
