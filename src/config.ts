@@ -36,6 +36,10 @@ export type ResolvedChangelogConfig = Omit<ChangelogConfig, "repo"> & {
   repo: RepoConfig;
 };
 
+export function defaultConfig(config: Partial<ChangelogConfig>){
+  return config;
+}
+
 const defaultOutput = "CHANGELOG.md";
 const getDefaultConfig = () =>
   <ChangelogConfig>{
